@@ -10,8 +10,8 @@ import warnings
 warnings.filterwarnings("ignore")
 from scipy.integrate import odeint
 from tqdm.auto import tqdm
-from psl.emulator import EmulatorBase
-from psl.perturb import Steps, Step, SplineSignal, Periodic, RandomWalk
+from pnnl_psl.emulator import EmulatorBase
+from pnnl_psl.perturb import Steps, Step, SplineSignal, Periodic, RandomWalk
 from tqdm.auto import tqdm
 
 

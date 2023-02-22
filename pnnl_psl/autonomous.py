@@ -13,7 +13,7 @@ References:
 import numpy as np
 import inspect, sys
 
-from psl.emulator import EmulatorBase
+from pnnl_psl.emulator import EmulatorBase
 from scipy.integrate import odeint
 from tqdm.auto import tqdm
 

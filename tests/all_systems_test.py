@@ -1,10 +1,10 @@
-from psl import plot
+from pnnl_psl import plot
 import matplotlib.pyplot as plt
 import os
 
-import psl.autonomous as auto
-import psl.nonautonomous as nauto
-import psl.ssm as ssm
+import pnnl_psl.autonomous as auto
+import pnnl_psl.nonautonomous as nauto
+import pnnl_psl.ssm as ssm
 import warnings
 warnings.filterwarnings("ignore")
 

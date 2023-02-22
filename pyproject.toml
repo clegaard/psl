@@ -3,18 +3,22 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "psl"
+name = "pnnl-psl"
 authors = [
-    { name = "Aaron Tuor", email = "todo@pnnl.gov" },
-    { name = "Jan Drgona", email = "todo@pnnl.gov" },
-    { name = "Elliot Skomski", email = "todo@pnnl.gov" },
-    { name = "Soumya Vasisht", email = "todo@pnnl.gov" },
+    { name = "Aaron Tuor", email = "aaron.tuor@pnnl.gov" },
+    { name = "Jan Drgona", email = "jan.drgona@pnnl.gov" },
+    { name = "Elliot Skomski", email = "elliot.skomski@pnnl.gov" },
+    { name = "Soumya Vasisht", email = "soumya.vasisht@pnnl.gov" },
 ]
 description = "Dynamic Systems Library in Python"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
-classifiers = ["Programming Language :: Python :: 3.10"]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
 dependencies = ["gym", "numpy", "scipy", "matplotlib", "pyts", "tqdm", "pandas"]
 dynamic = ["version"]
 
@@ -22,19 +26,19 @@ dynamic = ["version"]
 homepage = "https://pnnl.github.io/psl/"
 documentation = "https://pnnl.github.io/psl/"
 repository = "https://github.com/pnnl/psl"
-# changelog = "https://github.com/pnnl/psl/changelog"
+
 
 [tool.setuptools]
-packages = ["psl"]
+packages = ["pnnl_psl"]
 
 [tool.setuptools.dynamic]
-version = { attr = "psl.__version__" }
+version = { attr = "pnnl_psl.__version__" }
 
 [tool.setuptools.package-data]
-psl = ["psl/parameters/buildings/*"]
+psl = ["pnnl_psl/parameters/buildings/*"]
 
 [project.scripts]
-hello-world = "psl.cli:cli"
+pnnl_psl = "pnnl_psl.cli:cli"
 
 [project.optional-dependencies]
 test = ["ipython"]

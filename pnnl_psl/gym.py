@@ -2,7 +2,7 @@ from scipy.io import loadmat
 from gym import spaces, Env
 
 import numpy as np
-from psl.nonautonomous import systems, ODE_NonAutonomous
+from pnnl_psl.nonautonomous import systems, ODE_NonAutonomous
 
 def disturbance(file='../../TimeSeries/disturb.mat', n_sim=8064):
     return loadmat(file)['D'][:, :n_sim].T # n_sim X 3

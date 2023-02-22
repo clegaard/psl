@@ -3,9 +3,9 @@
 
 import numpy as np
 from scipy.sparse import coo_matrix
-from psl.autonomous import ODE_Autonomous
-from psl.nonautonomous import ODE_NonAutonomous
-from psl.perturb import Periodic, Sawtooth
+from pnnl_psl.autonomous import ODE_Autonomous
+from pnnl_psl.nonautonomous import ODE_NonAutonomous
+from pnnl_psl.perturb import Periodic, Sawtooth
 from sklearn.metrics.pairwise import euclidean_distances
 from tqdm.auto import tqdm
 

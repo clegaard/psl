@@ -3,8 +3,8 @@ import os
 from scipy.io import loadmat
 import numpy as np
 
-from psl.emulator import EmulatorBase
-from psl.perturb import Periodic, RandomWalk
+from pnnl_psl.emulator import EmulatorBase
+from pnnl_psl.perturb import Periodic, RandomWalk
 
 
 class SSM(EmulatorBase):

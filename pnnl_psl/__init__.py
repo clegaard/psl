@@ -1,14 +1,13 @@
-import psl.autonomous as auto
-import psl.nonautonomous as nauto
-import psl.ssm as ssm
-import psl.coupled_systems as cs
-import psl.emulator as emulator
-import psl.plot as plot
-from psl.perturb import *
+import pnnl_psl.autonomous as auto
+import pnnl_psl.nonautonomous as nauto
+import pnnl_psl.ssm as ssm
+import pnnl_psl.coupled_systems as cs
+import pnnl_psl.emulator as emulator
+import pnnl_psl.plot as plot
+from pnnl_psl.perturb import *
 
 import os
 
-import numpy
 __version__ = "1.2"
 
 resource_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
