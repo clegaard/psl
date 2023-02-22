@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psl"
+authors = [
+    { name = "Aaron Tuor", email = "todo@pnnl.gov" },
+    { name = "Jan Drgona", email = "todo@pnnl.gov" },
+    { name = "Elliot Skomski", email = "todo@pnnl.gov" },
+    { name = "Soumya Vasisht", email = "todo@pnnl.gov" },
+]
+description = "Dynamic Systems Library in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = ["Programming Language :: Python :: 3.10"]
+dependencies = ["gym", "numpy", "scipy", "matplotlib", "pyts", "tqdm", "pandas"]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://pnnl.github.io/psl/"
+documentation = "https://pnnl.github.io/psl/"
+repository = "https://github.com/pnnl/psl"
+# changelog = "https://github.com/pnnl/psl/changelog"
+
+[tool.setuptools]
+packages = ["psl"]
+
+[tool.setuptools.dynamic]
+version = { attr = "psl.__version__" }
+
+[tool.setuptools.package-data]
+psl = ["psl/parameters/buildings/*"]
+
+[project.scripts]
+hello-world = "psl.cli:cli"

@@ -8,6 +8,9 @@ from psl.perturb import *
 
 import os
 
+import numpy
+__version__ = "1.2"
+
 resource_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 datasets = {
