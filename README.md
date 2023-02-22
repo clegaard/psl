@@ -1,4 +1,4 @@
-# PSL: Python Systems Library v1.2
+Python Systems Library (PSL)
 
 PSL is a minimalistic library for simulating dynamical systems in Python
 using [SciPy](https://scipy.org/) library.
@@ -6,13 +6,16 @@ using [SciPy](https://scipy.org/) library.
 Authors: Jan Drgona, Aaron Tuor, Stefan Dernbach, 
 James Koch, Soumya Vasisht, Wenceslao Shaw Cortez, Draguna Vrabie
 
+# Installation
 
-## Documentation
+## pip
+``` bash
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install .
+```
 
-See online [Documentation](https://pnnl.github.io/psl/).
-
-## Setup
-
+## Conda
 ```console
 $ conda create -n psl python=3.8
 $ conda activate psl
@@ -23,7 +26,11 @@ $ conda activate psl
 (psl) $ pip install tqdm
 ```
 
-## Syntax and Use
+# Documentation
+
+See online [Documentation](https://pnnl.github.io/psl/).
+
+# Syntax and Use
 ```python
 import psl
 # instantiate selected dynamical system model
@@ -38,7 +45,7 @@ psl.plot.pltPhase(X=out['Y'])
 ![Duffing_time_series](figs/Duffing_time_series.png)
 ![Duffing_phase](figs/Duffing_phase.png)
 
-## Examples
+# Examples
 
 See folder [tests](/tests).
 
