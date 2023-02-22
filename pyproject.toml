@@ -35,3 +35,6 @@ psl = ["psl/parameters/buildings/*"]
 
 [project.scripts]
 hello-world = "psl.cli:cli"
+
+[project.optional-dependencies]
+test = ["ipython"]
